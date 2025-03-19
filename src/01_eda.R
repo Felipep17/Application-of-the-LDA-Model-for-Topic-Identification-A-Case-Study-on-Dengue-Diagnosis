@@ -35,7 +35,7 @@ suppressMessages(suppressWarnings(
   )
 ))
 # Set the main directory
-main_directory <-"C:/Users/Sebastián Palomino/Desktop/LDA_dengue_diagnosis" # Change
+main_directory <-"C:/Users/Sebastián Palomino/Desktop/Application-of-the-LDA-Model-for-Topic-Identification-A-Case-Study-on-Dengue-Diagnosis"
 setwd(main_directory)
 
 #  Define input and output paths
@@ -47,7 +47,7 @@ output_path_files=file.path(output_path,'files')
 dir.create(input_path, showWarnings = FALSE)
 dir.create(output_path, showWarnings = FALSE)
 dir.create(img_path, showWarnings = FALSE)
-
+dir.create(output_path_files, showWarnings = FALSE)
 #  Load the dataset
 data_file <- file.path(input_path, "Datos280124_FINALES_DENGUE_ULTIMA.xlsx")
 
